@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/websaite#">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- ogp -->
+        <meta property="og:title" content="TOP | yotaro.work" />
+        <meta property="og:url" content="https://yotaro.work" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="yotaro_ok" />
+        <meta property="og:description" content="WEBサービス制作会社勤務のSE＠渋谷 DMはお気軽にくださいウェーイ！ WEBデザイナー絶賛募集中です #駆け出しエンジニアと繋がりたい #駆け出しWEBデザイナーと繋がりたい" />
+        <meta property="og:image" content="https://yotaro.work/images/skull.png" />
+        <!-- twitter -->
+        <meta name="twitter:title" content="TOP | yotaro.work">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@yotaro_ok">
+        <meta name="twitter:creator" content="@yotaro_ok">
+        <meta name="twitter:description" content="WEBサービス制作会社勤務のSE＠渋谷 DMはお気軽にくださいウェーイ！ WEBデ>ザイナー絶賛募集中です #駆け出しエンジニアと繋がりたい #駆け出しWEBデザイナーと繋がりたい">
+        <meta name="twitter:image" content="https://yotaro.work/images/skull.png">
 
         <title>yotaro.work</title>
 
