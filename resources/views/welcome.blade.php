@@ -78,7 +78,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-color: #000000; color: #ffffff">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -97,7 +97,7 @@
             <div class="content">
                 <!-- div class="title m-b-md" -->
                 <div>
-                    <a style="color: #dddddd; font-size: 9px;" href="https://twitter.com/yotaro__ok">#yotaro__ok</a>
+                    <a style="color: #00ff00; font-size: 12px;" href="skyphone://54264638">#yotaro__ok</a>
                 </div>
             </div>
         </div>
