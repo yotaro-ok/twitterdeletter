@@ -10,14 +10,14 @@
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="ついったーりせったー" />
         <meta property="og:description" content="ツイート、リツイート、いいねを一括削除します" />
-        <meta property="og:image" content="https://yotaro.work/images/skull.png" />
+        <meta property="og:image" content="https://yotaro.work/images/TwitterResetter.png" />
         <!-- twitter -->
         <meta name="twitter:title" content="ついったーりせったー | yotaro.work">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@yotaro_ok">
         <meta name="twitter:creator" content="@yotaro_ok">
         <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します">
-        <meta name="twitter:image" content="https://yotaro.work/images/skull.png">
+        <meta name="twitter:image" content="https://yotaro.work/images/TwitterResetter.png">
 
         <title>yotaro.work</title>
 
@@ -60,7 +60,7 @@
             }
 
             .title {
-                font-size: 84px;/reset
+                font-size: 84px;
             }
 
             .links > a {
@@ -81,7 +81,11 @@
     <body style="background-color: #ffffff; color: #000000">
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <div class="title m-b-md">ついったーりせったー</div>
+                <span class="title"><small>ついったー<br>りせったー</small></span>
+                <br>
+                <br>
+                <br>
+                <br>
                 <form method="post" action="{{ $actionUrl }}">
                     @csrf
                     <button type="submit" class="btn btn-primary">{{ $buttonLabel }}</button>
