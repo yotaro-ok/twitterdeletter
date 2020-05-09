@@ -76,6 +76,27 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            a {
+                text-decoration: none;
+            }
+            .blinking {
+                -webkit-animation:blink 0.5s ease-in-out infinite alternate;
+                -moz-animation:blink 0.5s ease-in-out infinite alternate;
+                animation:blink 0.5s ease-in-out infinite alternate;
+            }
+            @-webkit-keyframes blink {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+            @-moz-keyframes blink {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+            @keyframes blink {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
         </style>
     </head>
     <body style="background-color: #000000; color: #ffffff">
@@ -97,7 +118,7 @@
             <div class="content">
                 <!-- div class="title m-b-md" -->
                 <div>
-                    <a style="color: #00ff00; font-size: 12px;" href="skyphone://54264638">#yotaro__ok</a>
+                    <a class="blinking" style="color: #00ff00; font-size: 12px;" href="https://twitter.com/yotaro__ok">#yotaro__ok</a>
                 </div>
             </div>
         </div>
