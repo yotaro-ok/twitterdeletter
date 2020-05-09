@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Abraham\TwitterOAuth\TwitterOAuth;
+use Exception;
 
 class TwitterController extends Controller
 {
@@ -37,11 +38,12 @@ class TwitterController extends Controller
 
     public function callback(Request $request)
     {
+        try {
         $oauth_token = session('oauth_token');
         $oauth_token_secret = session('oauth_token_secret');
 
         if ($request->has('oauth_token') && $oauth_token !== $request->oauth_token) {
-            return view('twitter')->with(['buttonLabel' => 'もう１回', 'actionUrl' => '/twitterresetter']);
+            return view('twitter')->with(['buttonLabel' => 'もう１回', 'actionUrl' => '/twitterresetter/authenticate']);
         }
 
         $twitter = new TwitterOAuth(
@@ -68,6 +70,9 @@ class TwitterController extends Controller
                     'oauth_token' => $token['oauth_token'],
                     'oauth_token_secret' => $token['oauth_token_secret'],
                 ]);
+        } catch(Exception $e) {
+            return view('twitter')->with(['buttonLabel' => '認証', 'actionUrl' => '/twitterresetter/authenticate']);
+        } 
     }
 
     public function reset(Request $request)

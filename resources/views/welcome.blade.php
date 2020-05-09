@@ -79,6 +79,8 @@
 
             a {
                 text-decoration: none;
+                color: #00ff00;
+                font-size: 12px
             }
             .blinking {
                 -webkit-animation:blink 0.5s ease-in-out infinite alternate;
@@ -99,8 +101,9 @@
             }
         </style>
     </head>
-    <body style="background-color: #000000; color: #ffffff">
+    <body style="background-color: #000000; color: #00ff00; font-size: 12px">
         <div class="flex-center position-ref full-height">
+            <?php /*
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -114,11 +117,14 @@
                     @endauth
                 </div>
             @endif
+            */ ?>
 
             <div class="content">
-                <!-- div class="title m-b-md" -->
                 <div>
-                    <a class="blinking" style="color: #00ff00; font-size: 12px;" href="https://twitter.com/yotaro__ok">#yotaro__ok</a>
+                    <a class="blinking" href="https://twitter.com/yotaro__ok">#yotaro__ok</a>
+                    <br>
+                    <br>
+                    <a class="blinking" href="https://yotaro.work/twitterresetter">ついったーりせったー</a>
                 </div>
             </div>
         </div>
