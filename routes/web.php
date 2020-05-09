@@ -11,6 +11,14 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+Route::get('/', 'TopController@index');
+
+Route::get('twitterresetter', 'TwitterController@index');
+Route::post('twitterresetter/authenticate', 'TwitterController@authenticate');
+Route::get('twitterresetter/callback', 'TwitterController@callback');
+Route::post('twitterresetter/reset', 'TwitterController@reset');
