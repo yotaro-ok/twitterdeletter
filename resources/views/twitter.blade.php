@@ -17,7 +17,7 @@
         <meta name="twitter:site" content="@yotaro_ok">
         <meta name="twitter:creator" content="@yotaro_ok">
         <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します">
-        <meta name="twitter:image" content="https://yotaro.work/images/twitter_tesetter.png">
+        <meta name="twitter:image" content="https://yotaro.work/images/twitter_resetter.png">
 
         <title>yotaro.work</title>
 
