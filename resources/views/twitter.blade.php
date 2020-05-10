@@ -10,14 +10,14 @@
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="ついったーりせったー" />
         <meta property="og:description" content="ツイート、リツイート、いいねを一括削除します" />
-        <meta property="og:image" content="https://yotaro.work/images/TwitterResetter.png" />
+        <meta property="og:image" content="https://yotaro.work/images/twitter_resetter.png" />
         <!-- twitter -->
         <meta name="twitter:title" content="ついったーりせったー | yotaro.work">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@yotaro_ok">
         <meta name="twitter:creator" content="@yotaro_ok">
         <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します">
-        <meta name="twitter:image" content="https://yotaro.work/images/TwitterResetter.png">
+        <meta name="twitter:image" content="https://yotaro.work/images/twitter_tesetter.png">
 
         <title>yotaro.work</title>
 
