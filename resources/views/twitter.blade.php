@@ -72,17 +72,13 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body style="background-color: #ffffff; color: #000000">
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <h1>ついったーりせったー</h1>
+                <h2>ついったーりせったー</h2>
                 <br>
                 <br>
                 <form method="post" action="{{ $actionUrl }}">
