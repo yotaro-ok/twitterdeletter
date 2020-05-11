@@ -10,7 +10,11 @@ class TwitterController extends Controller
 {
     //
     public function index(Request $request) {
-        return view('twitter')->with(['buttonLabel' => '認証', 'actionUrl' => '/twitterresetter/authenticate']);
+        return view('twitter')
+                ->with([
+                    'buttonLabel' => '認証',
+                    'actionUrl' => '/twitterresetter/authenticate',
+                ]);
     }
 
     public function authenticate(Request $request)
@@ -43,7 +47,11 @@ class TwitterController extends Controller
         $oauth_token_secret = session('oauth_token_secret');
 
         if ($request->has('oauth_token') && $oauth_token !== $request->oauth_token) {
-            return view('twitter')->with(['buttonLabel' => 'もう１回', 'actionUrl' => '/twitterresetter/authenticate']);
+            return view('twitter')
+                    ->with([
+                        'buttonLabel' => 'もう１回',
+                        'actionUrl' => '/twitterresetter/authenticate',
+                    ]);
         }
 
         $twitter = new TwitterOAuth(
@@ -71,7 +79,11 @@ class TwitterController extends Controller
                     'oauth_token_secret' => $token['oauth_token_secret'],
                 ]);
         } catch(Exception $e) {
-            return view('twitter')->with(['buttonLabel' => '認証', 'actionUrl' => '/twitterresetter/authenticate']);
+            return view('twitter')
+                    ->with([
+                        'buttonLabel' => '認証',
+                        'actionUrl' => '/twitterresetter/authenticate',
+                    ]);
         } 
     }
 
@@ -98,6 +110,10 @@ class TwitterController extends Controller
             }
         } while (count($favorites) > 0);
 
-        return view('twitter')->with(['buttonLabel' => '認証解除', 'actionUrl' => 'https://twitter.com/settings/applications']);
+        return view('twitter')
+                ->with([
+                    'buttonLabel' => '認証解除',
+                    'actionUrl' => 'https://twitter.com/settings/applications',
+                ]);
     }
 }
