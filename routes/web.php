@@ -15,10 +15,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-*/
 Route::get('/', 'TopController@index');
+*/
 
-Route::get('twitterresetter', 'TwitterController@index');
-Route::post('twitterresetter/authenticate', 'TwitterController@authenticate');
-Route::get('twitterresetter/callback', 'TwitterController@callback');
-Route::post('twitterresetter/reset', 'TwitterController@reset');
+Route::get('/', 'TwitterController@index');
+Route::post('authenticate', 'TwitterController@authenticate');
+Route::get('callback', 'TwitterController@callback');
+Route::post('reset', 'TwitterController@reset');
