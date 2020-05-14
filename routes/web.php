@@ -11,13 +11,6 @@
 |
 */
 
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', 'TopController@index');
-*/
-
 Route::get('/', 'TwitterController@index');
 Route::post('authenticate', 'TwitterController@authenticate');
 Route::get('callback', 'TwitterController@callback');
