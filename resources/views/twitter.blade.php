@@ -6,18 +6,18 @@
         
         <!-- ogp -->
         <meta property="og:title" content="ついったーりせったー | yotaro.work" />
-        <meta property="og:url" content="https://yotaro.work/twitterresetter" />
+        <meta property="og:url" content="https://twitterresetter.yotaro.work" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="ついったーりせったー" />
-        <meta property="og:description" content="ツイート、リツイート、いいねを一括削除します" />
-        <meta property="og:image" content="https://yotaro.work/images/twitter_resetter.png" />
+        <meta property="og:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likesat once." />
+        <meta property="og:image" content="https://twitterresetter.yotaro.work/images/twitter_resetter.png" />
         <!-- twitter -->
         <meta name="twitter:title" content="ついったーりせったー | yotaro.work">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@yotaro_ok">
         <meta name="twitter:creator" content="@yotaro_ok">
-        <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します">
-        <meta name="twitter:image" content="https://yotaro.work/images/twitter_resetter.png">
+        <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likesat once.">
+        <meta name="twitter:image" content="https://twitterresetter.yotaro.work/images/twitter_resetter.png">
 
         <title>yotaro.work</title>
 
@@ -79,7 +79,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <h2>ついったーりせったー</h2>
-                <br>
+                <h5>Twitter Resetter</h5>
                 <br>
                 <form method="post" action="{{ $actionUrl }}">
                     @csrf
@@ -89,6 +89,9 @@
                     <input type="hidden" name="oauth_token_secret" value="{{ $oauth_token_secret }}">
                     @endisset
                 </form>
+		</br>
+		<div><p style="color: #FF0000"><small>本サービスをご利用の際は、</br>「すべて自己責任に於いてのご利用」</br>とさせて頂きます。</small></p></div>
+		<div><p style="color: #FF0000"><small>When you use this web service, you do so at your own risk.</small></p></div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -13,7 +13,7 @@ class TwitterController extends Controller
         return view('twitter')
                 ->with([
                     'buttonLabel' => '認証',
-                    'actionUrl' => '/twitterresetter/authenticate',
+                    'actionUrl' => '/authenticate',
                 ]);
     }
 
@@ -50,7 +50,7 @@ class TwitterController extends Controller
                 return view('twitter')
                         ->with([
                             'buttonLabel' => 'もう１回',
-                            'actionUrl' => '/twitterresetter/authenticate',
+                            'actionUrl' => '/authenticate',
                         ]);
             }
 
@@ -74,7 +74,7 @@ class TwitterController extends Controller
             return view('twitter')
                     ->with([
                         'buttonLabel' => 'リセット',
-                        'actionUrl' => '/twitterresetter/reset',
+                        'actionUrl' => '/reset',
                         'oauth_token' => $token['oauth_token'],
                         'oauth_token_secret' => $token['oauth_token_secret'],
                     ]);
@@ -82,7 +82,7 @@ class TwitterController extends Controller
             return view('twitter')
                     ->with([
                         'buttonLabel' => '認証',
-                        'actionUrl' => '/twitterresetter/authenticate',
+                        'actionUrl' => '/authenticate',
                     ]);
         } 
     }
