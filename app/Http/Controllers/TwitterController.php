@@ -83,7 +83,11 @@ class TwitterController extends Controller
                         'oauth_token_secret' => $token['oauth_token_secret'],
                     ]);
         } catch(Exception $e) {
-            abort(500);
+            return view('twitter')
+                    ->with([
+                        'buttonLabel' => '認証',
+                        'actionUrl' => '/authenticate',
+                    ]);
         } 
     }
 
