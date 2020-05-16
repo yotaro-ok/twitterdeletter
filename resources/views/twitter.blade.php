@@ -10,16 +10,16 @@
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="ついったーりせったー" />
         <meta property="og:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likes at once." />
-        <meta property="og:image" content="https://twitterresetter.yotaro.work/images/twitter_resetter.png" />
+        <meta property="og:image" content="{{ asset('/images/twitter_resetter.png') }}" />
         <!-- twitter -->
-        <meta name="twitter:title" content="ついったーりせったー | yotaro.work">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@yotaro_ok">
-        <meta name="twitter:creator" content="@yotaro_ok">
-        <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likes at once.">
-        <meta name="twitter:image" content="https://twitterresetter.yotaro.work/images/twitter_resetter.png">
+        <meta name="twitter:title" content="ついったーりせったー | yotaro.work" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@yotaro_ok" />
+        <meta name="twitter:creator" content="@yotaro_ok" />
+        <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likes at once." />
+        <meta name="twitter:image" content="{{ asset('/images/twitter_resetter.png') }}" />
 
-        <title>yotaro.work</title>
+        <title>ついったーりせったー | yotaro.work</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
