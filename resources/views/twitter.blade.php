@@ -35,6 +35,14 @@
                 margin: 0;
             }
 
+            .dementor {
+                background: 
+                    linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%),
+                    linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+                background-blend-mode: multiply;
+                color: #ffffff;
+            }
+
             .full-height {
                 height: 100vh;
             }
@@ -84,7 +92,7 @@
             gtag('config', 'UA-166803691-1');
         </script>
     </head>
-    <body style="background-color: #ffffff; color: #000000">
+    <body class="dementor">
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <h2>ついったーりせったー</h2>
