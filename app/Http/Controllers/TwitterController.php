@@ -14,6 +14,7 @@ class TwitterController extends Controller
             return view('twitter')
                     ->with([
                         'buttonLabel' => '認証',
+                        'btnColor' => 'btn-outline-primary',
                         'actionUrl' => '/authenticate',
                     ]);
         } catch(Exception $e) {
@@ -78,6 +79,7 @@ class TwitterController extends Controller
             return view('twitter')
                     ->with([
                         'buttonLabel' => 'リセット',
+                        'btnColor' => 'btn-outline-danger',
                         'actionUrl' => '/reset',
                         'oauth_token' => $token['oauth_token'],
                         'oauth_token_secret' => $token['oauth_token_secret'],
@@ -86,6 +88,7 @@ class TwitterController extends Controller
             return view('twitter')
                     ->with([
                         'buttonLabel' => '認証',
+                        'btnColor' => 'btn-outline-primary',
                         'actionUrl' => '/authenticate',
                     ]);
         } 
@@ -118,6 +121,7 @@ class TwitterController extends Controller
             return view('twitter')
                     ->with([
                         'buttonLabel' => '認証解除',
+                        'btnColor' => 'btn-outline-success',
                         'actionUrl' => 'https://twitter.com/settings/applications',
                     ]);
         } catch(Exception $e) {

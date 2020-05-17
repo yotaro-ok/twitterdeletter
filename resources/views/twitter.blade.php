@@ -100,7 +100,7 @@
                 <br>
                 <form method="post" action="{{ $actionUrl }}">
                     @csrf
-                    <button type="submit" class="btn btn-outline-primary btn-lg">{{ $buttonLabel }}</button>
+                    <button type="submit" class="btn {{ $btnColor }} btn-lg">{{ $buttonLabel }}</button>
                     @isset($oauth_token)
                     <input type="hidden" name="oauth_token" value="{{ $oauth_token }}">
                     <input type="hidden" name="oauth_token_secret" value="{{ $oauth_token_secret }}">
