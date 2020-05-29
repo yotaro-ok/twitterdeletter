@@ -97,7 +97,7 @@
             <div class="content">
                 <h2>ついったーでりったー</h2>
                 <br>
-                <h5>Twitter Deleter (Eraser)</h5>
+                <h5>Twitter Deleter</h5>
                 <br>
                 <form method="post" action="{{ $actionUrl }}">
                     @csrf
