@@ -4,20 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+	<link rel="shortcut icon" href="favicon1.ico">
+	<link rel="icon" href="favicon1.ico">
+	<link rel="apple-touch-icon" href="favicon1.ico">
+	<link rel="apple-touch-icon-precomposed" href="favicon1.ico">
+
         <!-- ogp -->
         <meta property="og:title" content="ついったーでりったー | yotaro.work" />
-        <meta property="og:url" content="https://twitterresetter.yotaro.work" />
+        <meta property="og:url" content="https://twitterdeletter.yotaro.work" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="ついったーでりったー" />
         <meta property="og:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likes at once." />
-        <meta property="og:image" content="{{ asset('/images/twitter_resetter.png') }}" />
+        <meta property="og:image" content="{{ asset('/images/twitter_deletter.png') }}" />
         <!-- twitter -->
         <meta name="twitter:title" content="ついったーでりったー | yotaro.work" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@yotaro_ok" />
         <meta name="twitter:creator" content="@yotaro_ok" />
         <meta name="twitter:description" content="ツイート、リツイート、いいねを一括削除します。Delete all tweets, retweets and likes at once." />
-        <meta name="twitter:image" content="{{ asset('/images/twitter_resetter.png') }}" />
+        <meta name="twitter:image" content="{{ asset('/images/twitter_deletter.png') }}" />
 
         <title>ついったーでりったー | yotaro.work</title>
 
